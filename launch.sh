@@ -1,0 +1,1 @@
+/home/entio/.config/dunst/launch.sh

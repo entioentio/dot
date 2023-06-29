@@ -1,0 +1,9 @@
+lintChanged() {
+	yarn eslint $(git diff --diff-filter=d --name-only HEAD | grep -E '$' | xargs)
+}
+
+lintFixChanged() {
+        yarn eslint --fix $(git diff --diff-filter=d --name-only HEAD | grep -E '$' | xargs)
+}
+
+runStory() { symfony console story:run --no-interaction $@ && symfony console cache:pool:clear app.responses.cache }

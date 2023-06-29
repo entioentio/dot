@@ -1,0 +1,26 @@
+#!/bin/bash
+filename="/sys/class/backlight/intel_backlight/brightness"
+current=`cat $filename`
+argument=$1
+max=120000
+min=0
+step=$((($max-$min)/20))
+
+up() {
+  newvalue=$(($current+$step))
+  adjusted=$(($newvalue>=$max ? $max : $newvalue))
+  echo "Setting to $adjusted"
+  echo "$adjusted" > $filename
+}
+down() {
+  newvalue=$(($current-$step))
+  adjusted=$(($newvalue<=$min ? $min : $newvalue))
+  echo "Setting to $adjusted"
+  echo "$adjusted" > $filename	
+}
+
+case $argument in
+  u) up;;
+  d) down;;
+  *) echo "Invalid parameter"; exit 1;
+esac

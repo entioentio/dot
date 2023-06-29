@@ -1,0 +1,40 @@
+# git aliases
+alias gs='git status -sb'
+alias gps='git push origin '
+alias gpl='git pull origin '
+alias gch='git checkout '
+alias ga='git add '
+alias gc='git commit -m '
+alias gc-='git checkout -'
+alias gbr="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+alias gr="git-recent -n5"
+
+# docker
+alias dc='docker-compose'
+alias dcr='docker-compose stop && sudo docker-compose up -d --force-recreate'
+alias dcu='docker-compose up -d'
+alias dcs='docker-compose stop'
+alias dcep='docker-compose exec php-cli bash'
+alias dcps='docker-compose ps'
+alias dl='docker-compose logs --tail=0 --follow'
+alias dce='docker-compose exec'
+alias dphp='docker-compose exec php '
+alias dbc='docker-compose exec php bin/console'
+alias dwatch='docker-compose logs --follow webpack'
+alias dcec='docker-compose exec cm-php-cli bash'
+alias sf='symfony'
+alias sfc='symfony console'
+alias ssta='symfony server:start -d'
+alias ssto='symfony server:stop'
+alias yas='yarn serve --env frontend-debugging'
+
+
+alias check-port='sudo netstat -nlp | grep '
+alias start-http='srm ~/Projects/portal/var/log -rf && symfony proxy:start && cd ~/Projects/portal && symfony server:start -d --no-tls && docker-compose up -d && cd ~/Projects/client-manager && symfony server:start -d && docker-compose up -d'
+alias start='rm ~/Projects/portal/var/log -rf && (symfony proxy:start && cd ~/Projects/portal && symfony server:start -d && docker-compose up -d); (cd ~/Projects/client-manager && symfony server:start -d && docker-compose up -d); cd ~/Projects/portal'
+alias stop='rm ~/Projects/portal/var/log -rf && symfony proxy:stop && cd ~/Projects/portal && symfony server:stop && docker-compose stop && cd ~/Projects/client-manager && symfony server:stop && docker-compose stop'
+
+alias headphones='bluetooth_battery CC:98:8B:B1:96:03.10'
+alias figma='python3 ~/projects/figma-fonts-helper/server.py &'
+alias wacom='xsetwacom --list devices | grep -o -P "(\s\d+\s)" | while read line ; do xsetwacom --set "$line" MapToOutput HDMI-1; done'
