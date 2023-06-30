@@ -52,29 +52,6 @@
     # Rofi
     ~/.config/rofi: rofi
 
-    ~/bin/setup_network_for_wsl2.sh: scripts/setup_network_for_wsl2.sh
-    ~/bin/luxmed.sh: scripts/luxmed.sh
-    ~/.environment: environment
-    ~/.functions: functions
-    ~/.gitconfig: gitconfig
-    ~/.ideavimrc: ideavimrc
-    ~/.vim/vimrc:
-        path: vim/vimrc
-        create: true
-    ~/.p10k.zsh: p10k.zsh
-    ~/.config/redshift:
-        path: config/redshift/
-        create: true
-    ~/.config/vim/plugins: vim/plugins
-    ~/.config/vim/after: vim/after
-    ~/.config/nvim: kickstart.nvim
-    ~/.config/nvim/lua/custom/plugins/custom.lua: nvim_init.lua
-    ~/.config/i3/config: i3config
-    ~/.config/i3blocks/config: i3blocks
-    ~/.config/i3blocks/spotify_track.sh: scripts/spotify_track.sh
-    ~/.config/i3blocks/loadavg.sh: scripts/loadavg.sh
-    ~/.config/copyq/copyq.conf: copyq.conf
-
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing oh-my-zsh]
