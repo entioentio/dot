@@ -19,7 +19,6 @@
   - ~/.config/dunst
   - ~/.config/i3
   - ~/.config/polybar
-  - ~/.config/scripts
 
 - link:
     ~/.config/aliases: aliases
