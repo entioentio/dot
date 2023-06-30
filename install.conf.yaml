@@ -55,7 +55,7 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing oh-my-zsh]
   - 
-    command: '[[ $(grep Microsoft /proc/version) ]] || (! [[ $SHELL =~ "zsh" ]] && chsh -s $(which zsh)) || true '
+    command: '[[ $(grep Microsoft /proc/version) ]] || (! [[ $SHELL =~ "zsh" ]] && chown $(whoami) $(which zsh) && chsh -s $(which zsh)) || true '
     stdin: true
     stdout: true
     stderr: true
