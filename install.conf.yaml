@@ -13,7 +13,6 @@
       command: "sudo pacman -S --noconfirm"
 
 - create:
-  - ~/wallpaper
   - ~/Projects
   - ~/.config/Code/User
   - ~/.config/copyq
@@ -27,7 +26,8 @@
     ~/.config/scripts: scripts
     ~/wallpaper:
       path: wallpaper/**
-
+      glob: true
+      create: true
     ~/.zshrc: zshrc
     ~/.zsh-z.plugin.zsh: zsh-z.plugin.zsh
     ~/.config/mimeapps.list: mimeapps.list
