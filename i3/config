@@ -237,7 +237,7 @@ exec_always --no-startup-id python3 $HOME/.config/scripts/autorename-workspaces.
 exec_always --no-startup-id echo 100000 > /sys/class/backlight/intel_backlight/brightness
 
 # wallpaper
-exec_always --no-startup-id "feh --randomize --bg-fill ~/.config/scripts/wallpaper/*"
+exec_always --no-startup-id "feh --randomize --bg-fill ~/wallpaper/*"
 
 # title bar
 for_window [class=".*"] title_window_icon yes
