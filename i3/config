@@ -66,8 +66,8 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id "rofi -modi drun,run -show drun"
-bindsym $mod+d exec --no-startup-id "rofi -modi run,drun,window -show drun -config ~/.config/rofi-bak/config.rasi -theme /home/entio/.config/rofi/launchers/type-4/style-5.rasi"
-bindsym $mod+Shift+d exec --no-startup-id "rofi -modi window,run -show window -config ~/.config/rofi-bak/config.rasi -theme /home/entio/.config/rofi/launchers/type-4/style-5.rasi"
+bindsym $mod+d exec --no-startup-id "rofi -modi run,drun,window -show drun -config ~/.config/rofi-bak/config.rasi -theme ~/.config/rofi/launchers/type-4/style-5.rasi"
+bindsym $mod+Shift+d exec --no-startup-id "rofi -modi window,run -show window -config ~/.config/rofi-bak/config.rasi -theme ~/.config/rofi/launchers/type-4/style-5.rasi"
 bindsym $mod+$alt+Shift+d exec --no-startup-id "rofi -show drun -run-command 'sudo {cmd}'"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"

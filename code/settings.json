@@ -66,4 +66,5 @@
 },
 "previewServer.port": 9987,
 "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
+"gitlens.plusFeatures.enabled": false,
 }
