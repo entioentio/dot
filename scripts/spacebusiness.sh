@@ -2,7 +2,7 @@
 
 # Set variables
 REPO="kajmaj87/sb3"
-TOKEN=$GH_TOKEN
+TOKEN=$GH_SPACEBUSINESS_TOKEN
 ARTIFACT_NAME="sb3-x86_64-unknown-linux-gnu"
 UNPACK_DIR=~/sb3
 LAST_RUN_ID_FILE=$UNPACK_DIR/last_run_id.txt

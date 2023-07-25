@@ -9,6 +9,8 @@
 	+zsh
 	+omh my zsh
 	+fzf
+	-rofi
+	-pip (python-pip)
 	
 ## software install TODO
 	droidcam
