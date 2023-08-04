@@ -11,9 +11,13 @@ output='';
 
 #squares
 icon_filled="󰝤"
+icon_filled="-"
 icon_empty="󰝣"
+icon_empty="-"
 icon_current="󱔀"
+icon_current="+"
 spacer=" "
+spacer=""
 
 #eggs
 # icon_filled="󰪯"
