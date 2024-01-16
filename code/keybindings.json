@@ -21,7 +21,7 @@
 	},
 	{
 		"key": "ctrl+d",
-		"command": "-editor.action.addSelectionToNextFindMatch",
+		"command": "editor.action.addSelectionToNextFindMatch",
 		"when": "editorFocus"
 	},
 	{

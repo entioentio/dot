@@ -15,6 +15,7 @@
 - create:
   - ~/Projects
   - ~/.config/Code/User
+  - ~/.config/Code - OSS/User
   - ~/.config/copyq
   - ~/.config/dunst
   - ~/.config/i3
@@ -33,10 +34,13 @@
     ~/.config/mimeapps.list: mimeapps.list
     ~/.config/monitors.xml: monitors.xml
     ~/.config/pavucontrol.ini: pavucontrol.ini
+    ~/.screenlayout: screenlayout
 
     # VSCode
     ~/.config/Code/User/settings.json: code/settings.json
     ~/.config/Code/User/keybindings.json: code/keybindings.json
+    ~/.config/Code - OSS/User/settings.json: code/settings.json
+    ~/.config/Code - OSS/User/keybindings.json: code/keybindings.json
 
     ~/.config/copyq/copyq.conf: copyq/copyq.conf
     

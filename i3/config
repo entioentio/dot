@@ -63,7 +63,9 @@ bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+Ctrl+t exec --no-startup-id "pkill picom && picom -b"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
+
+# bindsym Print exec --no-startup-id i3-scrot
+bindsym Print --release exec "scrot -s -f /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
@@ -135,6 +137,12 @@ bindsym $mod+minus scratchpad show
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
+
+# move worskpaces across displays
+bindsym $mod+Shift+Ctrl+Right exec i3-msg move workspace to output right
+bindsym $mod+Ctrl+Shift+Left exec i3-msg move workspace to output left
+bindsym $mod+Ctrl+Shift+Top exec i3-msg move workspace to output top
+bindsym $mod+Ctrl+Shift+Bottom exec i3-msg move workspace to output bottom
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
@@ -255,6 +263,9 @@ mode "resize" {
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt
         bindsym semicolon resize grow width 5 px or 5 ppt
+
+		bindsym minus resize shrink width 5 px or 5 ppt
+        bindsym plus resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

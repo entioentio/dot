@@ -1,6 +1,6 @@
 {
-	"workbench.colorTheme": "IntelliJ Darcula Theme",
-	
+	"workbench.colorTheme": "Gruvbox Dark Hard",
+
 	"files.exclude": {
 		"**/.*": false,
 		"**/.git": true,
@@ -8,18 +8,13 @@
 		"**/.hg": true,
 		"**/.DS_Store": true
 	},
-	
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
-	
+
 	"editor.fontFamily": "Fira Code, 'monospace', monospace, calt",
 	"editor.fontLigatures": true,
 	"editor.minimap.autohide": true,
 	"editor.mouseWheelZoom": true,
-	"eslint.validate": [
-		
-	],
-	
+	"eslint.validate": [],
+
 	"path-intellisense.extensionOnImport": true,
 	"diffEditor.ignoreTrimWhitespace": false,
 	"git.autofetch": true,
@@ -27,44 +22,51 @@
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
-	"[javascript]": {  
-	"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
-},
-"[vue]": {
-	"editor.defaultFormatter": "Vue.volar"
-},
-"typescript.updateImportsOnFileMove.enabled": "always",
-"[json]": {
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"eslint.alwaysShowStatus": true,
-"eslint.codeActionsOnSave.rules": null,
-"eslint.format.enable": true,
-"eslint.workingDirectories": [
-	
-],
-"editor.tokenColorCustomizations": {
-	"[IntelliJ Darcula Theme]": {
-		"textMateRules": [
-			{
-				"scope": [
-					"comment.block.documentation.js",
-					"comment.block.documentation.ts",
-				],
-				"settings": {
-					"foreground": "#6A8759"
+	"[javascript]": {
+		"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"eslint.alwaysShowStatus": true,
+	"eslint.codeActionsOnSave.rules": null,
+	"eslint.format.enable": true,
+	"eslint.workingDirectories": [],
+	"editor.tokenColorCustomizations": {
+		"[IntelliJ Darcula Theme]": {
+			"textMateRules": [
+				{
+					"scope": [
+						"comment.block.documentation.js",
+						"comment.block.documentation.ts"
+					],
+					"settings": {
+						"foreground": "#6A8759"
+					}
 				}
-			}
-		]
-	}
-},
-"workbench.preferredLightColorTheme": "IntelliJ Darcula Theme",
-"workbench.iconTheme": "vscode-jetbrains-icon-theme",
-"workbench.editor.wrapTabs": true,
-"[ini]": {
-	"editor.colorDecorators": true
-},
-"previewServer.port": 9987,
-"workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
-"gitlens.plusFeatures.enabled": false,
+			]
+		}
+	},
+	"workbench.preferredLightColorTheme": "IntelliJ Darcula Theme",
+	"workbench.iconTheme": "vscode-jetbrains-icon-theme",
+	"workbench.editor.wrapTabs": true,
+	"[ini]": {
+		"editor.colorDecorators": true
+	},
+	"previewServer.port": 9987,
+	"workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
+	"gitlens.plusFeatures.enabled": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"github.copilot.editor.enableAutoCompletions": true
 }

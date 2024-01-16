@@ -36,6 +36,12 @@ alias start-http='srm ~/Projects/portal/var/log -rf && symfony proxy:start && cd
 alias start='rm ~/Projects/portal/var/log -rf && (symfony proxy:start && cd ~/Projects/portal && symfony server:start -d && docker-compose up -d); (cd ~/Projects/client-manager && symfony server:start -d && docker-compose up -d); cd ~/Projects/portal'
 alias stop='rm ~/Projects/portal/var/log -rf && symfony proxy:stop && cd ~/Projects/portal && symfony server:stop && docker-compose stop && cd ~/Projects/client-manager && symfony server:stop && docker-compose stop'
 
+alias screen-home='sh ~/.screenlayout/home.sh'
+alias screen-otg='sh ~/.screenlayout/otg.sh'
 alias headphones='bluetooth_battery CC:98:8B:B1:96:03.10'
 alias figma='python3 ~/projects/figma-fonts-helper/server.py &'
 alias wacom='xsetwacom --list devices | grep -o -P "(\s\d+\s)" | while read line ; do xsetwacom --set "$line" MapToOutput HDMI-1; done'
+
+alias bo='cd $HOME/Projects/MW/frontend/packages/bo'
+alias boy='cd $HOME/Projects/MW/frontend/packages/bo && yarn dev'
+alias bog='cd $HOME/Projects/MW/frontend/packages/bo && yarn gulp'
