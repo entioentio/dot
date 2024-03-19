@@ -53,6 +53,9 @@ source ~/.zsh-z.plugin.zsh
 
 export PATH=$PATH:/usr/bin/node
 
+# Turn beeper off
+xset b off
+
 source ~/.config/aliases
 source ~/.config/functions
 
@@ -61,3 +64,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export JAVA_HOME=/home/entio/Software/jdk-11.0.16
+export ANDROID_HOME=/home/entio/Android/Sdk
+export NODE_OPTIONS=--openssl-legacy-provider

@@ -38,6 +38,7 @@ alias stop='rm ~/Projects/portal/var/log -rf && symfony proxy:stop && cd ~/Proje
 
 alias screen-home='sh ~/.screenlayout/home.sh'
 alias screen-otg='sh ~/.screenlayout/otg.sh'
+alias screen-temp='sh ~/.screenlayout/temp.sh'
 alias headphones='bluetooth_battery CC:98:8B:B1:96:03.10'
 alias figma='python3 ~/projects/figma-fonts-helper/server.py &'
 alias wacom='xsetwacom --list devices | grep -o -P "(\s\d+\s)" | while read line ; do xsetwacom --set "$line" MapToOutput HDMI-1; done'

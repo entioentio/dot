@@ -448,5 +448,12 @@ bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -
 exec_always --no-startup-id "feh --randomize --bg-fill ~/wallpaper/*"
 exec_always --no-startup-id python3 $HOME/.config/scripts/autorename-workspaces.py --norenumber_workspaces
 
+#copyq
+exec_always --no-startup-id copyq
+
+#disble speaker beep
+exec_always --no-startup-id xset -b
+
+
 #terminal
 bindsym $mod+t exec urxvt
